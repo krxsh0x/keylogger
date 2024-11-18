@@ -21,21 +21,29 @@ A simple keylogger written in Python, complemented by a modern web interface to 
 ### Keylogger
 
 1. Navigate to the `keylogger` directory:
+
    ```bash
    cd keylogger
    ```
+
 2. Install the required Python packages:
+
    ```bash
    pip install -r requirements.txt
    ```
+
 3. Run the keylogger script:
+
    ```bash
    python logger.py
    ```
+
 4. To generate an executable, run the following command:
+
    ```bash
    pyinstaller --noconfirm --onefile --windowed --icon "C:\path\to\icon.ico" --hide-console "C:\path\to\logger.py"
    ```
+
    Replace `C:\path\to\icon.ico` and `C:\path\to\logger.py` with the actual paths to the icon and the logger script.
 
 ---
@@ -43,19 +51,26 @@ A simple keylogger written in Python, complemented by a modern web interface to 
 ### Web Interface
 
 1. Navigate to the `web` directory:
+
    ```bash
    cd web
    ```
+
 2. Update the `BASE_URL` in `src/utils/consts.ts` to point to your backend (API) URL.
 3. Install dependencies:
+
    ```bash
    npm install
    ```
+
 4. Start the development server:
+
    ```bash
    npm run dev
    ```
+
 5. To deploy the frontend on cloudflare pages:
+
    ```bash
    npm run deploy
    ```
@@ -65,23 +80,33 @@ A simple keylogger written in Python, complemented by a modern web interface to 
 ### Keylogger API
 
 1. Navigate to the `keylogger-api` directory:
+
    ```bash
    cd keylogger-api
    ```
+
 2. Fill out the `example.toml` file with the necessary configurations for your environment.
+
    - Rename it to `wrangler.toml`:
+
      ```bash
      mv example.toml wrangler.toml
      ```
+
 3. Install dependencies:
+
    ```bash
    npm install
    ```
+
 4. Start the development server:
+
    ```bash
    npm run dev
    ```
+
 5. To deploy the backend API on cloudflare workers:
+
    ```bash
    npm run deploy
    ```
