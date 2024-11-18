@@ -1,0 +1,16 @@
+name = "keylogger-api"
+main = "src/index.ts"
+compatibility_date = "2024-11-13"
+
+# compatibility_flags = [ "nodejs_compat" ]
+
+[vars]
+ACCESS_KEY_ID = "" # s3 ACCESS_KEY_ID
+SECRET_ACCESS_KEY = "" # s3 SECRET_ACCESS_KEY
+ACCESS_TOKEN = "" # randomly generated access token 
+kv_namespaces = [
+    { binding = "keylogger", id = "", preview_id="" } # cloudflare KV binding 
+]
+[observability]
+enabled = true
+head_sampling_rate = 1
